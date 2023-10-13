@@ -4,7 +4,7 @@ by Jintong Gao<sup>1</sup>, He Zhao<sup>2</sup>, Zhuo Li<sup>3,4</sup>, Dandan G
 
 <sup>1</sup>Jilin University, <sup>2</sup>CSIRO's Data61, <sup>3</sup>Shenzhen Research Institute of Big Data, <sup>4</sup>The Chinese University of Hong Kong, Shenzhen
 
-This is the official implementation of [Enhancing Minority Classes by Mixing: An Adaptative Optimal Transport Approach for Long-tailed Classification](https://pages.github.com/](https://openreview.net/forum?id=M7FQpIdo0X&noteId=a0mlRwgug6) in PyTorch.
+This is the official implementation of [Enhancing Minority Classes by Mixing: An Adaptative Optimal Transport Approach for Long-tailed Classification](https://openreview.net/forum?id=M7FQpIdo0X&noteId=a0mlRwgug6) in PyTorch.
 
 ## Requirements:
 
