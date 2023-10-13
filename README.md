@@ -8,7 +8,15 @@ This is the official implementation of "Enhancing Minority Classes by Mixing: An
 
 ## Requirements:
 
-All codes are written by Python 3.6 with PyTorch >=1.5  torchvision >=0.6  TensorboardX 1.9  Numpy 1.17.3  POT 0.9.0
+All codes are written by Python 3.6 with 
+
+```
+PyTorch >=1.5
+torchvision >=0.6
+TensorboardX 1.9
+Numpy 1.17.3
+POT 0.9.0
+```
 
 ## Training
 
