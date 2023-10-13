@@ -1,6 +1,4 @@
-# Enhancing-Minority-Classes-by-Mixing
-
-Code for "Enhancing Minority Classes by Mixing: An Adaptative Optimal Transport Approach for Long-tailed Classification", in NeurIPS 2023.
+# Enhancing Minority Classes by Mixing: An Adaptative Optimal Transport Approach for Long-tailed Classificationc (NeurIPS, 2023)
 
 Requirements:
 
