@@ -1,6 +1,6 @@
 # Enhancing Minority Classes by Mixing: An Adaptative Optimal Transport Approach for Long-tailed Classificationc (NeurIPS, 2023)
 
-by Jintong Gao<sup>1</sup>, He Zhao2, Zhuo Li3,4, Dandan Guo1†
+by Jintong Gao<sup>1</sup>, He Zhao<sup>2</sup>, Zhuo Li<sup>3,4</sup>, Dandan Guo<sup>1,*</sup>
 
 1 Seoul National University, 2 NAVER AI Lab
 
