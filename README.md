@@ -6,7 +6,7 @@ by Jintong Gao<sup>1</sup>, He Zhao<sup>2</sup>, Zhuo Li<sup>3,4</sup>, Dandan G
 
 This is the official implementation of "Enhancing Minority Classes by Mixing: An Adaptative Optimal Transport Approach for Long-tailed Classification" in PyTorch.
 
-Requirements:
+## Requirements:
 
 All codes are written by Python 3.6 with PyTorch >=1.5  torchvision >=0.6  TensorboardX 1.9  Numpy 1.17.3  POT 0.9.0
 
@@ -15,7 +15,10 @@ All codes are written by Python 3.6 with PyTorch >=1.5  torchvision >=0.6  Tenso
 To train the model(s) in the paper, run this command:
 
 CIFAR-10:
+
+'''
 python train.py --dataset cifar10 --num_classes 10 --loss_type ERM --train_rule None --data_aug OT
+'''
 
 CIFAR-100:
 python train.py --dataset cifar100 --num_classes 100 --loss_type ERM --train_rule DRW --data_aug OT
