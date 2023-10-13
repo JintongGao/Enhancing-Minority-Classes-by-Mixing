@@ -22,16 +22,25 @@ POT 0.9.0
 
 To train the model(s) in the paper, run this command:
 
-CIFAR-10:
+### CIFAR-LT
+
+CIFAR-10-LT (ERM-DRW + OTmix):
 
 ```
-python train.py --dataset cifar10 --num_classes 10 --loss_type ERM --train_rule None --data_aug OT
+python cifar_train.py --dataset cifar10 --num_classes 10 --loss_type ERM --train_rule DRW --data_aug OT
 ```
 
-CIFAR-100:
+CIFAR-100-LT (BALMS + OTmix):
 
 ```
-python train.py --dataset cifar100 --num_classes 100 --loss_type ERM --train_rule DRW --data_aug OT
+python train.py --dataset cifar100 --num_classes 100 --loss_type BALMS --train_rule None --data_aug OT
+```
+### ImageNet-LT
+
+ImageNet-LT(ERM + OTmix):
+
+```
+python ImageNet_train.py --dataset Imagenet-LT --num_classes 1000 --loss_type ERM --train_rule None --data_aug OT
 ```
 
 ## Evaluation
