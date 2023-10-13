@@ -16,9 +16,9 @@ To train the model(s) in the paper, run this command:
 
 CIFAR-10:
 
-'''
+```
 python train.py --dataset cifar10 --num_classes 10 --loss_type ERM --train_rule None --data_aug OT
-'''
+```
 
 CIFAR-100:
 python train.py --dataset cifar100 --num_classes 100 --loss_type ERM --train_rule DRW --data_aug OT
