@@ -1,5 +1,11 @@
 # Enhancing Minority Classes by Mixing: An Adaptative Optimal Transport Approach for Long-tailed Classificationc (NeurIPS, 2023)
 
+by Jintong Gao<sup>1</sup>, He Zhao2, Zhuo Li3,4, Dandan Guo1†
+
+1 Seoul National University, 2 NAVER AI Lab
+
+This is the official implementation of Context-rich Minority Oversampling for Long-tailed Classification in PyTorch.
+
 Requirements:
 
 Python 3.6  PyTorch >=1.5  torchvision >=0.6  TensorboardX 1.9  Numpy 1.17.3  POT 0.9.0
