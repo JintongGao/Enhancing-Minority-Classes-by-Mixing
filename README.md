@@ -72,6 +72,10 @@ iNaturalist 2018
 python test.py --root path --dataset iNat18 --arch resnet50 --num_classes 8142 --resume model_path
 ```
 
+## Pretrained models
+
+[GitHub Pages](https://drive.google.com/drive/folders/1gXtHw-LHDOzywzsyVzYny6ghwK95n_gT/)
+
 ## Citation
 
 If you find our paper and repo useful, please cite our paper.
