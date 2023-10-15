@@ -57,7 +57,6 @@ def main():
 
 def main_worker(gpu, ngpus_per_node, args):
     global best_acc1
-    global best_epoch
     global train_cls_num_list
     global cls_num_list_cuda
     global confusion_cf
@@ -221,14 +220,10 @@ def main_worker(gpu, ngpus_per_node, args):
         # remember best acc@1 and save checkpoint
         is_best = acc1 > best_acc1
         best_acc1 = max(acc1, best_acc1)
-        
-        if is_best:
-            best_epoch = max(epoch, best_epoch)
 
         tf_writer.add_scalar('acc/test_top1_best', best_acc1, epoch)
         output_best = 'Best Prec@1: %.3f\n' % (best_acc1)
         print(output_best)
-        print("Best epoch: {}".format(best_epoch))
         log_testing.write(output_best + '\n')
         log_testing.flush()
 
