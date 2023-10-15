@@ -82,7 +82,7 @@ def main():
 
     elif args.dataset == 'iNat18':
         num_classes = 8142
-        model = getattr(torchvision.models, args.arch)(pretrained=False)
+        model = resnet50(pretrained=True)
         if args.loss_type == 'LDAM':
             num_ftrs = model.fc.in_features
             model.fc = NormedLinear(num_ftrs, num_classes)
@@ -93,12 +93,12 @@ def main():
             transforms.ToTensor(),
             transforms.Normalize([0.466, 0.471, 0.380], [0.195, 0.194, 0.192])
         ])
-        train_dataset = LT_Dataset(args.root, args.root + '/iNaturalist18_train.txt')
+        train_dataset = LT_Dataset(args.root, './i2018_LT/iNaturalist18_train.txt')
         cls_num_list = [0] * num_classes
         for label in train_dataset.targets:
             cls_num_list[label] += 1
 
-        val_dataset = LT_Dataset(args.root, args.root + '/iNaturalist18_val.txt', transform_val)
+        val_dataset = LT_Dataset(args.root, './i2018_LT/iNaturalist18_val.txt', transform_val)
 
     cls_num_list_cuda = torch.from_numpy(np.array(cls_num_list)).float().cuda()
     train_cls_num_list = np.array(cls_num_list)
