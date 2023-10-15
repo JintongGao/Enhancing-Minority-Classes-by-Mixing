@@ -74,7 +74,7 @@ python test.py --root path --dataset iNat18 --arch resnet50 --num_classes 8142 -
 
 ## Pretrained models
 
-[GitHub Pages](https://drive.google.com/drive/folders/1gXtHw-LHDOzywzsyVzYny6ghwK95n_gT/)
+vfvfvo [GitHub Pages](https://drive.google.com/drive/folders/1gXtHw-LHDOzywzsyVzYny6ghwK95n_gT/)
 
 ## Citation
 
