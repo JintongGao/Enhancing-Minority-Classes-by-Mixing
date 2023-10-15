@@ -56,7 +56,7 @@ parser.add_argument('-p', '--print_freq', default=50, type=int,
                     metavar='N', help='print frequency (default: 100)')
 parser.add_argument('--resume', default=None, type=str, metavar='PATH',
                     help='path to latest checkpoint (default: none)')
-parser.add_argument('--gpu', default=0, type=int,
+parser.add_argument('--gpu', default=None, type=int,
                     help='GPU id to use.')
 parser.add_argument('--root_log', type=str, default='log')
 parser.add_argument('--root_model', type=str, default='checkpoint')
