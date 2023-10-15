@@ -48,7 +48,7 @@ python imagenet_train.py --root path --dataset Imagenet-LT --num_classes 1000 --
 DRW + OTmix:
 
 ```
-python iNaturalist 2018_train.py--root path --dataset Imagenet-LT --num_classes 1000 --loss_type ERM --train_rule DRW --data_aug OT
+python iNat18_train.py--root path --dataset iNat18 --num_classes 8142 --loss_type ERM --train_rule DRW --data_aug OT
 ```
 
 ## Evaluation
