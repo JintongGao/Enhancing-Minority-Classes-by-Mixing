@@ -27,7 +27,7 @@ To train the model(s) in the paper, run this command:
 CIFAR-10-LT (ERM-DRW + OTmix):
 
 ```
-python cifar_train.py --dataset cifar10 --num_classes 10 --loss_type ERM --train_rule DRW --data_aug OT
+python cifar_train.py --dataset cifar10 --num_classes 10 --loss_type ERM --train_rule DRW --data_aug OT --gpu 0
 ```
 
 CIFAR-100-LT (BALMS + OTmix):
@@ -37,18 +37,39 @@ python train.py --dataset cifar100 --num_classes 100 --loss_type BALMS --train_r
 ```
 ### ImageNet-LT
 
-ImageNet-LT(ERM + OTmix):
+ERM + OTmix:
 
 ```
 python ImageNet_train.py --dataset Imagenet-LT --num_classes 1000 --loss_type ERM --train_rule None --data_aug OT
+```
+
+### iNaturalist 2018
+
+DRW + OTmix:
+
+```
+python iNaturalist 2018_train.py --dataset Imagenet-LT --num_classes 1000 --loss_type ERM --train_rule None --data_aug OT
 ```
 
 ## Evaluation
 
 To evaluate my model, run:
 
+CIFAR-LT
 ```
-python test.py --resume path
+python test.py --root path --dataset cifar10 --arch resnet32 --num_classes 10 --gpu 0 --resume model_path
+```
+
+ImageNet-LT
+
+```
+python test.py --root path --dataset Imagenet-LT --arch resnet50 --num_classes 1000 --resume model_path
+```
+
+iNaturalist 2018
+
+```
+python test.py --root path --dataset iNat18 --arch resnet50 --num_classes 8142 --resume model_path
 ```
 
 ## Citation
