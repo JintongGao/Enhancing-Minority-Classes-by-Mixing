@@ -74,7 +74,9 @@ python test.py --root path --dataset iNat18 --arch resnet50 --num_classes 8142 -
 
 ## Pretrained models
 
-vfvfvo [GitHub Pages](https://drive.google.com/drive/folders/1gXtHw-LHDOzywzsyVzYny6ghwK95n_gT/)
+CIFAR-LT [Google drive](https://drive.google.com/drive/folders/1gXtHw-LHDOzywzsyVzYny6ghwK95n_gT/)
+ImageNet-LT [Google drive](https://drive.google.com/drive/folders/11WfAI0Epo3Bus37hTeAwBCyhSUzjHEA/)
+iNaturalist 2018 [Google drive](https://drive.google.com/drive/folders/1AarCBLI8JHaLGDMGZnvEBPBnmiIogiwD/)
 
 ## Citation
 
