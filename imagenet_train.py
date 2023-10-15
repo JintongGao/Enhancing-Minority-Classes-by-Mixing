@@ -198,7 +198,7 @@ def main_worker(gpu, ngpus_per_node, args):
         
         # select method and train
         if (np.random.binomial(n=1, p=(epoch/args.epochs)**args.u))<1:  
-            train_random(val_loader, model, criterion, optimizer, epoch, args, log_training,
+            train_random(train_loader, model, criterion, optimizer, epoch, args, log_training,
               tf_writer, weighted_train_loader)
         else:
             # get confusion matrix    
@@ -207,7 +207,7 @@ def main_worker(gpu, ngpus_per_node, args):
             for l1 in range(num_classes):
                 cf[l1][l1] = 0
             
-            train_OTmix(val_loader, model, criterion, optimizer, epoch, cf, args, log_training, tf_writer, weighted_train_loader)
+            train_OTmix(train_loader, model, criterion, optimizer, epoch, cf, args, log_training, tf_writer, weighted_train_loader)
 
         # evaluate on validation set
         acc1, confusion_cf = validate(val_loader, model, criterion, epoch, args, log_testing, tf_writer)
