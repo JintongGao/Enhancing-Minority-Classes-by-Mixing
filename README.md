@@ -40,7 +40,7 @@ python cifar_train.py --dataset cifar100 --num_classes 100 --loss_type BALMS --t
 ERM + OTmix:
 
 ```
-python imagenet_train.py --root path --dataset Imagenet-LT --num_classes 1000 --loss_type ERM --train_rule None --data_aug OT
+python imagenet_train.py --root path --dataset Imagenet-LT --num_classes 1000 --loss_type ERM --train_rule None --epochs 200 --data_aug OT
 ```
 
 ### iNaturalist 2018
@@ -48,7 +48,7 @@ python imagenet_train.py --root path --dataset Imagenet-LT --num_classes 1000 --
 DRW + OTmix:
 
 ```
-python iNat18_train.py--root path --dataset iNat18 --num_classes 8142 --loss_type ERM --train_rule DRW --data_aug OT
+python iNat18_train.py--root path --dataset iNat18 --num_classes 8142 --loss_type ERM --train_rule DRW --epochs 210 --data_aug OT
 ```
 
 ## Evaluation
