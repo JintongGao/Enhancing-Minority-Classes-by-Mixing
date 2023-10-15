@@ -83,9 +83,11 @@ def main():
     elif args.dataset == 'iNat18':
         num_classes = 8142
         model = resnet50(pretrained=True)
+        num_ftrs = model.fc.in_features
         if args.loss_type == 'LDAM':
-            num_ftrs = model.fc.in_features
             model.fc = NormedLinear(num_ftrs, num_classes)
+        else:
+            model.fc = nn.Linear(num_ftrs, num_classes)
 
         transform_val = transforms.Compose([
             transforms.Resize(256),
