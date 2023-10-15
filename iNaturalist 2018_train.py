@@ -250,7 +250,7 @@ def hms_string(sec_elapsed):
     s = sec_elapsed % 60.
     return "{}:{:>02}:{:>05.2f}".format(h, m, s)
 
-def train_cmo(train_loader, model, criterion, optimizer, epoch, args, log, tf_writer=None,
+def train_random(train_loader, model, criterion, optimizer, epoch, args, log, tf_writer=None,
           weighted_train_loader=None):
     batch_time = AverageMeter('Time', ':6.3f')
     data_time = AverageMeter('Data', ':6.3f')
