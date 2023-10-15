@@ -99,4 +99,4 @@ url={https://openreview.net/forum?id=M7FQpIdo0X}
 
 If you have any questions when running the code, please feel free to concat us by emailing
 
-+Jintong Gao gaojt20@mails.jlu.edu.cn](mailto:https://gaojt20.mails.jlu.edu.cn/))
++ Jintong Gao ([gaojt20@mails.jlu.edu.cn](mailto:gaojt20.mails.jlu.edu.cn/))
