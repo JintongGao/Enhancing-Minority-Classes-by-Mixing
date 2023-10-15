@@ -33,14 +33,14 @@ python cifar_train.py --dataset cifar10 --num_classes 10 --loss_type ERM --train
 CIFAR-100-LT (BALMS + OTmix):
 
 ```
-python train.py --dataset cifar100 --num_classes 100 --loss_type BALMS --train_rule None --data_aug OT
+python cifar_train.py --dataset cifar100 --num_classes 100 --loss_type BALMS --train_rule None --data_aug OT --gpu 0
 ```
 ### ImageNet-LT
 
 ERM + OTmix:
 
 ```
-python ImageNet_train.py --dataset Imagenet-LT --num_classes 1000 --loss_type ERM --train_rule None --data_aug OT
+python imagenet_train.py --root path --dataset Imagenet-LT --num_classes 1000 --loss_type ERM --train_rule None --data_aug OT
 ```
 
 ### iNaturalist 2018
@@ -75,7 +75,9 @@ python test.py --root path --dataset iNat18 --arch resnet50 --num_classes 8142 -
 ## Pretrained models
 
 CIFAR-LT [Google drive](https://drive.google.com/drive/folders/1gXtHw-LHDOzywzsyVzYny6ghwK95n_gT/)
+
 ImageNet-LT [Google drive](https://drive.google.com/drive/folders/11WfAI0Epo3Bus37hTeAwBCyhSUzjHEA/)
+
 iNaturalist 2018 [Google drive](https://drive.google.com/drive/folders/1AarCBLI8JHaLGDMGZnvEBPBnmiIogiwD/)
 
 ## Citation
