@@ -386,7 +386,7 @@ def train_OTmix(train_loader, model, criterion, optimizer, epoch, cf,  args, log
             C_feature = 1-d_cosine(x_col, y_lin)
             
             # get cost Cij
-            M = args.w1 * C_feature + (1 - args.w1) * (1 - cf_scale)  # (0.05, 0.95)
+            M = args.w * C_feature + (1 - args.w) * (1 - cf_scale)  # (0.05, 0.95)
             
             # get Tij
             x_points = f2.shape[-2]
