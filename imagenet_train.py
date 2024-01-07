@@ -116,7 +116,7 @@ def main_worker(gpu, ngpus_per_node, args):
     print(args)
 
     train_dataset = LT_Dataset(args.root, 'ImageNet_LT/ImageNet_LT_train.txt', transform_train)
-    val_dataset = LT_Dataset(args.root, 'ImageNet_LT/ImageNet_LT_test.txt', transform_val)
+    val_dataset = LT_Dataset(args.root, 'ImageNet_LT/ImageNet_LT_val.txt', transform_val)
 
     num_classes = len(np.unique(train_dataset.targets))
     assert num_classes == 1000
