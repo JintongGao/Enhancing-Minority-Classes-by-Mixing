@@ -25,6 +25,7 @@ def main():
     args.store_name = '_'.join(
         [args.dataset, str(args.imb_factor), args.arch, args.loss_type, args.train_rule, args.data_aug, str(args.epochs), str(args.w), str(args.weighted_alpha), str(args.batch_size), str(args.u)])
     prepare_folders(args)
+    print(args)
 
     if args.gpu is not None:
         warnings.warn('You have chosen a specific GPU. This will completely '
@@ -93,8 +94,6 @@ def main_worker(gpu, ngpus_per_node, args):
         transforms.ToTensor(),
         transforms.Normalize(mean=mean, std=std),
     ])
-
-    print(args)
     
     if args.dataset == 'cifar100':
         train_dataset = IMBALANCECIFAR100(root=args.root, imb_factor=args.imb_factor,
