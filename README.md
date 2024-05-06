@@ -85,14 +85,6 @@ iNaturalist 2018 [Google drive](https://drive.google.com/drive/folders/1AarCBLI8
 If you find our paper and repo useful, please cite our paper.
 
 ```
-@inproceedings{
-anonymous2023enhancing,
-title={Enhancing Minority Classes by Mixing: An Adaptative Optimal Transport Approach for Long-tailed Classification},
-author={Anonymous},
-booktitle={Thirty-seventh Conference on Neural Information Processing Systems},
-year={2023},
-url={https://openreview.net/forum?id=M7FQpIdo0X}
-}
 @inproceedings{DBLP:conf/nips/GaoZLG23,
   author       = {Jintong Gao and He Zhao and Zhuo Li and Dandan Guo},
   title        = {Enhancing Minority Classes by Mixing: An Adaptative Optimal Transport Approach for Long-tailed Classification},
